@@ -12,3 +12,21 @@ WARNING:
     All data in the database will be permanently deleted. Proceed with caution 
     and ensure you have proper backups before running this script.
 */
+-- Create Database 'DataWarehouse'
+
+USE master;
+
+CREATE DATABASE DataWarehouse;
+
+USE DataWarehouse;
+
+-- Create Schema
+
+CREATE SCHEMA bronze;
+GO
+
+CREATE SCHEMA silver;
+GO
+
+CREATE SCHEMA gold;
+GO
